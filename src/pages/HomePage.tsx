@@ -1,7 +1,6 @@
 import React from 'react';
 import { Briefcase, GraduationCap, Code, Rocket, Phone, Download, Send } from 'lucide-react';
 import Chat from '../components/Chat';
-import landingImage from '../assets/images/image001.jpg';
 
 const HomePage = () => {
 
@@ -71,7 +70,7 @@ const HomePage = () => {
                 {/* Left column intentionally empty to create space */}
               </div>
               <div className="relative h-[80vh] md:h-screen w-full md:ml-auto">
-                <img src={landingImage} 
+                <img src="/image001.jpg" 
                  alt="AI Executive"
                   className="absolute inset-0 w-full h-full object-cover object-center mix-blend-luminosity hover:mix-blend-normal transition-all duration-500 rounded-lg shadow-xl"
                 />

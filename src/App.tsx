@@ -63,27 +63,27 @@ function App() {
         <div ref={cursorRef} className="hidden fixed w-8 h-8 pointer-events-none mix-blend-difference z-50 border-2 border-white rounded-full transform -translate-x-1/2 -translate-y-1/2" />
 
         {/* Navigation */}
-        <nav className="fixed top-0 w-full z-40 px-8 py-6 bg-white/95 backdrop-blur-sm border-b border-gray-100">
+        <nav className="fixed top-0 w-full z-40 px-8 py-6 bg-black/95 backdrop-blur-sm border-b border-blue-500/20">
           <div className="max-w-6xl mx-auto flex items-center justify-between">
-            <Link to="/" className="text-xl font-semibold text-gray-900">
+            <Link to="/" className="text-xl font-semibold text-white">
               Benjamin Hinson
             </Link>
             
             <div className="flex items-center gap-8">
-              <Link to="/" className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors">
+              <Link to="/" className="text-sm font-medium text-blue-200 hover:text-white transition-colors">
                 Work
               </Link>
-              <Link to="/about" className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors">
-                About
+              <Link to="/experience" className="text-sm font-medium text-blue-200 hover:text-white transition-colors">
+                Experience
               </Link>
-              <Link to="/contact" className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors">
-                Contact
+              <Link to="/skills" className="text-sm font-medium text-blue-200 hover:text-white transition-colors">
+                Skills
               </Link>
               <a 
                 href="https://linkedin.com/in/benjamin-hinson" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="flex items-center text-gray-600 hover:text-gray-900 transition-colors"
+                className="flex items-center text-blue-200 hover:text-white transition-colors"
               >
                 <Linkedin className="w-4 h-4" />
               </a>
