@@ -10,6 +10,7 @@ import PortfolioPage from './pages/PortfolioPage';
 import BlogPage from './pages/BlogPage';
 import BlogPostPage from './pages/BlogPostPage';
 import Footer from './components/Footer';
+import Analytics from './components/Analytics';
 
 function App() {
   const cursorRef = useRef<HTMLDivElement>(null);
@@ -56,66 +57,36 @@ function App() {
 
   return (
     <Router>
-      <div className="min-h-screen bg-black text-white flex flex-col">
-        {/* Custom cursor */}
-        <div ref={cursorRef} className="fixed w-8 h-8 pointer-events-none mix-blend-difference z-50 border-2 border-white rounded-full transform -translate-x-1/2 -translate-y-1/2" />
+      <Analytics measurementId={import.meta.env.VITE_GA_MEASUREMENT_ID} />
+      <div className="min-h-screen bg-white text-gray-900 flex flex-col">
+        {/* Custom cursor - hidden for clean look */}
+        <div ref={cursorRef} className="hidden fixed w-8 h-8 pointer-events-none mix-blend-difference z-50 border-2 border-white rounded-full transform -translate-x-1/2 -translate-y-1/2" />
 
         {/* Navigation */}
-        <nav className="fixed top-0 w-full z-40 px-6 py-8 bg-black/80 backdrop-blur-sm">
-          <div className="max-w-[2000px] mx-auto flex flex-col md:flex-row md:items-center justify-between gap-4">
-            <div className="flex items-center justify-between w-full md:w-auto">
-              <div className="flex items-center gap-6">
-                <a href="https://www.plerk.co.za" target="_blank" rel="noopener noreferrer">
-                  <img src={plerkLogo} alt="Plerk Logo" className="h-24" />
-                </a>
-                <Link to="/" className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600">
-                  Benjamin Hinson CSM : TOGAF : KANBAN
-                </Link>
-              </div>
-            </div>
+        <nav className="fixed top-0 w-full z-40 px-8 py-6 bg-white/95 backdrop-blur-sm border-b border-gray-100">
+          <div className="max-w-6xl mx-auto flex items-center justify-between">
+            <Link to="/" className="text-xl font-semibold text-gray-900">
+              Benjamin Hinson
+            </Link>
             
             <div className="flex items-center gap-8">
-              <Link to="/" className="text-sm font-medium hover:text-blue-400 transition-colors">
-                Home
+              <Link to="/" className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors">
+                Work
               </Link>
-              <Link to="/experience" className="text-sm font-medium hover:text-blue-400 transition-colors">
-                Professional Experience
+              <Link to="/about" className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors">
+                About
               </Link>
-              <Link to="/education" className="text-sm font-medium hover:text-blue-400 transition-colors">
-                Education
-              </Link>
-              <Link to="/skills" className="text-sm font-medium hover:text-blue-400 transition-colors">
-                Skills
-              </Link>
-              <Link to="/portfolio" className="text-sm font-medium hover:text-blue-400 transition-colors">
-                Portfolio
-              </Link>
-              <Link to="/blog" className="text-sm font-medium hover:text-blue-400 transition-colors">
-                Blog
+              <Link to="/contact" className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors">
+                Contact
               </Link>
               <a 
                 href="https://linkedin.com/in/benjamin-hinson" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="flex items-center text-blue-400 hover:text-blue-300 transition-colors"
+                className="flex items-center text-gray-600 hover:text-gray-900 transition-colors"
               >
-                <Linkedin className="w-5 h-5" />
+                <Linkedin className="w-4 h-4" />
               </a>
-              <div className="relative group">
-                <button className="px-6 py-2 rounded-full bg-gradient-to-r from-blue-500 to-blue-700 text-white font-medium shadow-lg shadow-blue-500/30 hover:shadow-blue-600/40 transition-all duration-300 hover:scale-105">
-                  Let's Connect
-                </button>
-                <div className="absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-black/90 ring-1 ring-blue-500 ring-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-150 ease-in-out">
-                  <div className="py-1" role="menu" aria-orientation="vertical">
-                    <a href="mailto:bhinson@plerk.co.za" className="block px-4 py-2 text-sm text-blue-200 hover:bg-blue-700" role="menuitem">
-                      <Send className="inline-block w-4 h-4 mr-2" /> Email
-                    </a>
-                    <a href="tel:+27825654665" className="block px-4 py-2 text-sm text-blue-200 hover:bg-blue-700" role="menuitem">
-                      <Phone className="inline-block w-4 h-4 mr-2" /> Phone
-                    </a>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </nav>

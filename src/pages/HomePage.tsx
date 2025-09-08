@@ -23,15 +23,15 @@ const HomePage = () => {
                 </span>
               </h1>
               <p className="text-xl md:text-2xl max-w-xl text-blue-200 font-light mb-12">
-                Here's where I share things I have done, currently doing and plan on doing. 
+                🎮 Gamer since the Commodore 64 era, now channeling a lifelong passion for games into producing and delivering great titles.
               </p>
               <div className="flex gap-4">
                 <div className="relative group">
-                  <button className="group relative px-8 py-4 bg-gradient-to-r from-blue-500 to-blue-700 rounded-full overflow-hidden pointer-events-auto shadow-lg shadow-blue-500/30 hover:shadow-blue-600/40 transition-all duration-300 hover:scale-105">
+                  <a href="mailto:bhinson@plerk.co.za" className="group relative px-8 py-4 bg-gradient-to-r from-blue-500 to-blue-700 rounded-full overflow-hidden pointer-events-auto shadow-lg shadow-blue-500/30 hover:shadow-blue-600/40 transition-all duration-300 hover:scale-105 inline-block">
                     <span className="relative z-10 text-white font-medium">
                       Let's Connect
                     </span>
-                  </button>
+                  </a>
                   <div className="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-black/90 ring-1 ring-blue-500 ring-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-150 ease-in-out z-50">
                     <div className="py-1" role="menu" aria-orientation="vertical">
                       <a href="mailto:bhinson@plerk.co.za" className="block px-4 py-2 text-sm text-blue-200 hover:bg-blue-700 cursor-pointer" role="menuitem">
@@ -44,8 +44,8 @@ const HomePage = () => {
                   </div>
                 </div>
                 <a 
-                  href="/Benjamin_CV[23375]-1.pdf" 
-                  download
+                  href="/Benjamin_Hinson_-_Senior_Producer.pdf" 
+                  download="Benjamin_Hinson_Senior_Producer_Resume.pdf"
                   className="group relative px-8 py-4 bg-blue-600 hover:bg-blue-500 rounded-full overflow-hidden pointer-events-auto transition-colors duration-300 flex items-center gap-2"
                 >
                   <Download className="w-5 h-5" />
@@ -55,10 +55,10 @@ const HomePage = () => {
                 </a>
               </div>
               
-              {/* Chat Component */}
-              <div className="mt-12 pointer-events-auto max-w-md">
-                <Chat />
-              </div>
+                                {/* Chat Component */}
+                  <div id="chat-section" className="mt-12 pointer-events-auto max-w-md">
+                    <Chat />
+                  </div>
             </div>
           </div>
         </div>
@@ -96,110 +96,116 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* Video Section */}
-      <section className="py-24 relative">
-        <div className="absolute inset-0 bg-gradient-to-b from-black to-transparent" />
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            {/* Video Player */}
-            <div className="relative aspect-video rounded-2xl overflow-hidden bg-blue-900">
-              <video 
-                className="w-full h-full object-cover"
-                autoPlay 
-                loop 
-                muted 
-                playsInline
-              >
-                <source src="/path/to/your/video.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-400/20 to-transparent" />
-            </div>
+             {/* Game Development Journey Section */}
+       <section className="py-24 relative">
+         <div className="absolute inset-0 bg-gradient-to-b from-black to-transparent" />
+         <div className="max-w-7xl mx-auto px-6">
+           <div className="text-center mb-16">
+             <h2 className="text-4xl md:text-5xl font-bold mb-6">
+               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600">
+                 🎮 My Game Development Journey
+               </span>
+             </h2>
+             <p className="text-blue-200 text-lg max-w-3xl mx-auto">
+               From Commodore 64 enthusiast to Senior Producer - here's how my passion for gaming evolved into a career in game development and production.
+             </p>
+           </div>
 
-            {/* Video Introduction */}
-            <div className="relative">
-              <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600">
-                  My Intro Video
-                </span>
-              </h2>
-              <p className="text-blue-200 text-lg mb-8">
-                Watch this short introduction to learn more about my journey, expertise, and what drives me in the world of technology and innovation.
-              </p>
-              <button className="px-8 py-4 bg-gradient-to-r from-blue-400 to-blue-600 rounded-full text-white font-medium">
-                Watch Full Video
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
+           {/* Journey Timeline */}
+           <div className="relative">
+             {/* Timeline Line */}
+             <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-blue-400 to-blue-600"></div>
+             
+             <div className="space-y-16">
+               {/* 1980s - Gaming Beginnings */}
+               <div className="relative flex items-center">
+                 <div className="w-1/2 pr-8 text-right">
+                   <div className="bg-gradient-to-r from-blue-900/20 to-transparent p-6 rounded-l-2xl border-l-4 border-blue-400">
+                     <div className="text-2xl mb-2">🎮</div>
+                     <h3 className="text-xl font-bold text-blue-300 mb-2">Gaming Beginnings</h3>
+                     <p className="text-blue-200 text-sm">Started my journey with the Commodore 64, discovering the magic of interactive entertainment and digital worlds.</p>
+                     <div className="text-xs text-blue-400 mt-2">1980s</div>
+                   </div>
+                 </div>
+                 <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-blue-400 rounded-full border-4 border-black"></div>
+                 <div className="w-1/2 pl-8"></div>
+               </div>
 
-      {/* Grid Section */}
-      <section className="py-24 relative">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="grid grid-cols-2 gap-4">
-            {/* Professional Experience Card */}
-            <div className="group relative h-48 w-full overflow-hidden rounded-xl">
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-blue-600">
-                <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?auto=format&fit=crop&q=80')] mix-blend-overlay opacity-20" />
-              </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
-              <div className="relative h-full p-4 flex flex-col justify-end transform group-hover:-translate-y-1 transition-transform duration-300">
-                <Briefcase className="w-6 h-6 mb-2 text-blue-300 transform group-hover:scale-110 transition-transform duration-300" />
-                <h3 className="text-lg font-bold text-white mb-1">Professional Journey</h3>
-                <p className="text-blue-200/80 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 line-clamp-2">
-                  From Solution Architecture at First Rand to Delivery Lead at Equal Experts, specializing in digital transformation and strategic technology leadership across Africa and the UK.
-                </p>
-              </div>
-            </div>
+               {/* 2000s - Business & Technology */}
+               <div className="relative flex items-center">
+                 <div className="w-1/2 pr-8"></div>
+                 <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-blue-400 rounded-full border-4 border-black"></div>
+                 <div className="w-1/2 pl-8">
+                   <div className="bg-gradient-to-l from-blue-900/20 to-transparent p-6 rounded-r-2xl border-r-4 border-blue-400">
+                     <div className="text-2xl mb-2">💼</div>
+                     <h3 className="text-xl font-bold text-blue-300 mb-2">Business & Technology</h3>
+                     <p className="text-blue-200 text-sm">Built expertise in enterprise delivery, project management, and digital transformation across multiple industries.</p>
+                     <div className="text-xs text-blue-400 mt-2">2000s-2020s</div>
+                   </div>
+                 </div>
+               </div>
 
-            {/* Education Card */}
-            <div className="group relative h-48 w-full overflow-hidden rounded-xl">
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-blue-600">
-                <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&q=80')] mix-blend-overlay opacity-20" />
-              </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
-              <div className="relative h-full p-4 flex flex-col justify-end transform group-hover:-translate-y-1 transition-transform duration-300">
-                <GraduationCap className="w-6 h-6 mb-2 text-blue-300 transform group-hover:scale-110 transition-transform duration-300" />
-                <h3 className="text-lg font-bold text-white mb-1">Education</h3>
-                <p className="text-blue-200/80 text-xs opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  Elite academics
-                </p>
-              </div>
-            </div>
+               {/* 2020s - AI & Innovation */}
+               <div className="relative flex items-center">
+                 <div className="w-1/2 pr-8 text-right">
+                   <div className="bg-gradient-to-r from-blue-900/20 to-transparent p-6 rounded-l-2xl border-l-4 border-blue-400">
+                     <div className="text-2xl mb-2">🤖</div>
+                     <h3 className="text-xl font-bold text-blue-300 mb-2">AI & Innovation</h3>
+                     <p className="text-blue-200 text-sm">Led Azure Machine Learning implementations and pioneered AI strategies, bridging the gap between technology and business value.</p>
+                     <div className="text-xs text-blue-400 mt-2">2020-2023</div>
+                   </div>
+                 </div>
+                 <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-blue-400 rounded-full border-4 border-black"></div>
+                 <div className="w-1/2 pl-8"></div>
+               </div>
 
-            {/* Skills Card */}
-            <div className="group relative h-48 w-full overflow-hidden rounded-xl">
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-blue-600">
-                <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80')] mix-blend-overlay opacity-20" />
-              </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
-              <div className="relative h-full p-4 flex flex-col justify-end transform group-hover:-translate-y-1 transition-transform duration-300">
-                <Code className="w-6 h-6 mb-2 text-blue-300 transform group-hover:scale-110 transition-transform duration-300" />
-                <h3 className="text-lg font-bold text-white mb-1">Skills</h3>
-                <p className="text-blue-200/80 text-xs opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  AI mastery
-                </p>
-              </div>
-            </div>
+               {/* 2024+ - Game Production */}
+               <div className="relative flex items-center">
+                 <div className="w-1/2 pr-8"></div>
+                 <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-blue-400 rounded-full border-4 border-black"></div>
+                 <div className="w-1/2 pl-8">
+                   <div className="bg-gradient-to-l from-blue-900/20 to-transparent p-6 rounded-r-2xl border-r-4 border-blue-400">
+                     <div className="text-2xl mb-2">🎯</div>
+                     <h3 className="text-xl font-bold text-blue-300 mb-2">Senior Producer</h3>
+                     <p className="text-blue-200 text-sm">Now channeling decades of experience into game production, combining technical expertise with creative vision to deliver exceptional gaming experiences.</p>
+                     <div className="text-xs text-blue-400 mt-2">2024+</div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
 
-            {/* Portfolio Card */}
-            <div className="group relative h-48 w-full overflow-hidden rounded-xl">
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-blue-600">
-                <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80')] mix-blend-overlay opacity-20" />
+                         {/* Call to Action */}
+              <div className="text-center mt-16">
+                <p className="text-blue-200 mb-6">Ready to bring this unique perspective to your game development team?</p>
+                <div className="flex justify-center">
+                  <button 
+                    onClick={() => {
+                      const chatElement = document.getElementById('chat-section');
+                      if (chatElement) {
+                        chatElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                        // Focus on the chat input if it exists
+                        setTimeout(() => {
+                          const chatInput = chatElement.querySelector('input, textarea');
+                          if (chatInput) {
+                            chatInput.focus();
+                          }
+                        }, 1000);
+                      } else {
+                        console.log('Chat section not found');
+                      }
+                    }}
+                    className="px-8 py-4 bg-transparent border-2 border-blue-400 rounded-full text-blue-400 font-medium hover:bg-blue-400 hover:text-white transition-all duration-300 flex items-center justify-center gap-2"
+                  >
+                    <Send className="w-5 h-5" />
+                    Let's Chat
+                  </button>
+                </div>
               </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
-              <div className="relative h-full p-4 flex flex-col justify-end transform group-hover:-translate-y-1 transition-transform duration-300">
-                <Rocket className="w-6 h-6 mb-2 text-blue-300 transform group-hover:scale-110 transition-transform duration-300" />
-                <h3 className="text-lg font-bold text-white mb-1">Portfolio</h3>
-                <p className="text-blue-200/80 text-xs opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  Innovation showcase
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+         </div>
+       </section>
+
+
 
       {/* Resume Section */}
       <section id="experience" className="py-24 relative bg-black/30">
@@ -210,9 +216,9 @@ const HomePage = () => {
                 Professional Journey
               </span>
             </h2>
-            <p className="text-lg text-blue-200 max-w-3xl mx-auto leading-relaxed">
-              My career path represents a unique convergence of business leadership, technical expertise, and innovation. With over two decades of experience spanning marketing, entrepreneurship, and technology, I've evolved from traditional business roles into a technology-focused leader specializing in AI implementation and digital transformation. My journey has been shaped by formal education in Information Technology and Business Leadership, complemented by hands-on experience delivering complex technical solutions in enterprise environments. Today, I leverage this multidisciplinary background to bridge the gap between business strategy and technological innovation, creating AI-powered solutions that drive real business value.
-            </p>
+                            <p className="text-lg text-blue-200 max-w-3xl mx-auto leading-relaxed">
+                  My career path reflects a unique blend of delivery leadership, creative collaboration, and technical expertise. With over 15 years of experience leading complex projects across finance, retail, and technology, I've built a track record of guiding multi-disciplinary teams from concept to release. Alongside this, I've been a lifelong gamer—immersed in the evolution of titles from the Commodore 64 to modern PlayStation and Xbox platforms—giving me a deep appreciation for both the craft and culture of game development. Today, I'm focused on channeling my delivery expertise and passion for games into production, where I bridge business priorities, creative vision, and technical execution to help developers bring memorable player experiences to life.
+                </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

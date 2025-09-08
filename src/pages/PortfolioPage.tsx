@@ -63,8 +63,8 @@ const PortfolioPage = () => {
       <div className="pt-32 pb-24">
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex items-center gap-4 mb-12">
-            <Rocket className="w-8 h-8 text-yellow-400" />
-            <h2 className="text-4xl font-bold">Portfolio</h2>
+            <Rocket className="w-8 h-8 text-blue-400" />
+            <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600">Portfolio</h2>
           </div>
 
           {/* Category Filter */}
@@ -75,8 +75,8 @@ const PortfolioPage = () => {
                 onClick={() => setSelectedCategory(category)}
                 className={`px-4 py-2 rounded-full transition-all ${
                   selectedCategory === category
-                    ? 'bg-yellow-400 text-black'
-                    : 'bg-zinc-800 text-white hover:bg-zinc-700'
+                    ? 'bg-blue-400 text-white'
+                    : 'bg-blue-900/30 border border-blue-500/30 text-blue-200 hover:bg-blue-800/50'
                 }`}
               >
                 {category}
@@ -86,7 +86,7 @@ const PortfolioPage = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredProjects.map((project, index) => (
-              <div key={index} className="group relative overflow-hidden rounded-xl bg-gray-900">
+              <div key={index} className="group relative overflow-hidden rounded-xl bg-gradient-to-br from-blue-900/20 to-blue-800/10 backdrop-blur-sm border border-blue-500/20">
                 <div className="relative h-64">
                   <img 
                     src={project.image} 
@@ -98,7 +98,7 @@ const PortfolioPage = () => {
                 <div className="absolute bottom-0 left-0 right-0 p-6">
                   <div className="flex justify-between items-start mb-2">
                     <h3 className="text-xl font-bold">{project.title}</h3>
-                    <span className="px-3 py-1 text-sm bg-yellow-400/20 text-yellow-400 rounded-full">
+                    <span className="px-3 py-1 text-sm bg-blue-400/20 text-blue-400 rounded-full">
                       {project.category}
                     </span>
                   </div>
@@ -107,7 +107,7 @@ const PortfolioPage = () => {
                     {project.technologies.map((tech, techIndex) => (
                       <span 
                         key={techIndex}
-                        className="px-3 py-1 text-sm bg-yellow-400/10 text-yellow-400 rounded-full"
+                        className="px-3 py-1 text-sm bg-blue-900/30 border border-blue-500/30 text-blue-200 rounded-full"
                       >
                         {tech}
                       </span>

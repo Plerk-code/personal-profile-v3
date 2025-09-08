@@ -205,16 +205,16 @@ const ExperiencePage = () => {
       <div className="pt-32 pb-24">
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex items-center gap-4 mb-12">
-            <Briefcase className="w-8 h-8 text-yellow-400" />
-            <h2 className="text-4xl font-bold">Professional Experience</h2>
+            <Briefcase className="w-8 h-8 text-blue-400" />
+            <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600">Professional Experience</h2>
           </div>
           <div className="grid gap-6 max-w-3xl mx-auto">
             {experiences.map((exp, index) => (
               <div
                 key={index}
-                className="bg-zinc-900 rounded-lg p-6 transition-all duration-300 hover:shadow-lg hover:shadow-yellow-400/20 relative overflow-hidden bg-[url('/card-bg.png')] bg-cover bg-center"
+                className="bg-gradient-to-br from-blue-900/20 to-blue-800/10 backdrop-blur-sm rounded-lg p-6 transition-all duration-300 hover:shadow-lg hover:shadow-blue-400/20 relative overflow-hidden border border-blue-500/20 hover:border-blue-400/40"
               >
-                <div className="absolute inset-0 bg-zinc-900/70"></div>
+                <div className="absolute inset-0 bg-black/30"></div>
                 <div className="relative z-10">
                   <div 
                     className="cursor-pointer"
@@ -222,7 +222,7 @@ const ExperiencePage = () => {
                   >
                     <div className="flex justify-between items-start">
                       <div>
-                        <h3 className="text-2xl font-bold mb-2 text-yellow-400">{exp.title}</h3>
+                        <h3 className="text-2xl font-bold mb-2 text-blue-400">{exp.title}</h3>
                         <div className="flex items-center gap-4 text-gray-300 mb-4">
                           <div className="flex items-center gap-2">
                             <Building2 className="w-4 h-4" />
@@ -236,7 +236,7 @@ const ExperiencePage = () => {
                         </div>
                         <p className="text-gray-200">{exp.description}</p>
                       </div>
-                      <button className="text-yellow-400">
+                      <button className="text-blue-400">
                         {expandedCard === index ? (
                           <ChevronUp className="w-6 h-6" />
                         ) : (
@@ -247,10 +247,10 @@ const ExperiencePage = () => {
                   </div>
                   
                   {expandedCard === index && (
-                    <div className="mt-6 pt-6 border-t border-zinc-700">
+                    <div className="mt-6 pt-6 border-t border-blue-500/30">
                       <div className="space-y-6">
                         <div>
-                          <h4 className="text-lg font-semibold mb-3 text-yellow-400">Key Responsibilities</h4>
+                          <h4 className="text-lg font-semibold mb-3 text-blue-400">Key Responsibilities</h4>
                           <ul className="list-disc list-inside space-y-2 text-gray-200">
                             {exp.details.responsibilities.map((item, i) => (
                               <li key={i}>{item}</li>
@@ -258,7 +258,7 @@ const ExperiencePage = () => {
                           </ul>
                         </div>
                         <div>
-                          <h4 className="text-lg font-semibold mb-3 text-yellow-400">Key Achievements</h4>
+                          <h4 className="text-lg font-semibold mb-3 text-blue-400">Key Achievements</h4>
                           <ul className="list-disc list-inside space-y-2 text-gray-200">
                             {exp.details.achievements.map((item, i) => (
                               <li key={i}>{item}</li>
@@ -266,12 +266,12 @@ const ExperiencePage = () => {
                           </ul>
                         </div>
                         <div>
-                          <h4 className="text-lg font-semibold mb-3 text-yellow-400">Technologies Used</h4>
+                          <h4 className="text-lg font-semibold mb-3 text-blue-400">Technologies Used</h4>
                           <div className="flex flex-wrap gap-2">
                             {exp.details.technologies.map((tech, i) => (
                               <span
                                 key={i}
-                                className="px-3 py-1 bg-zinc-800 rounded-full text-sm text-gray-200"
+                                className="px-3 py-1 bg-blue-900/30 border border-blue-500/30 rounded-full text-sm text-blue-200 hover:bg-blue-800/50 transition-colors"
                               >
                                 {tech}
                               </span>
