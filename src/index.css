@@ -15,3 +15,17 @@
   animation: scroll 30s linear infinite;
   width: fit-content;
 }
+
+/* Force header styling */
+nav {
+  background-color: rgba(0, 0, 0, 0.95) !important;
+  backdrop-filter: blur(8px) !important;
+}
+
+nav a {
+  color: white !important;
+}
+
+nav .text-blue-200 {
+  color: rgb(191 219 254) !important;
+}
