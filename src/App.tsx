@@ -58,12 +58,12 @@ function App() {
   return (
     <Router>
       <Analytics measurementId={import.meta.env.VITE_GA_MEASUREMENT_ID} />
-      <div className="min-h-screen bg-white text-gray-900 flex flex-col">
+      <div className="min-h-screen bg-transparent text-gray-900 flex flex-col">
         {/* Custom cursor - hidden for clean look */}
         <div ref={cursorRef} className="hidden fixed w-8 h-8 pointer-events-none mix-blend-difference z-50 border-2 border-white rounded-full transform -translate-x-1/2 -translate-y-1/2" />
 
         {/* Navigation */}
-        <nav className="fixed top-0 w-full z-40 px-8 py-6 bg-black/95 backdrop-blur-sm border-b border-blue-500/20">
+        <nav className="fixed top-0 w-full z-40 px-8 py-6 bg-black/95 backdrop-blur-sm border-b border-blue-500/20 !bg-black/95" style={{backgroundColor: 'rgba(0, 0, 0, 0.95)'}}>
           <div className="max-w-6xl mx-auto flex items-center justify-between">
             <Link to="/" className="text-xl font-semibold text-white">
               Benjamin Hinson
