@@ -98,11 +98,20 @@ Provide concise, informative answers about Benjamin's background, experience, sk
         model: "llama-3.1-8b-instant"
       };
       
+      // Debug: Check if API key is available
+      const apiKey = import.meta.env.VITE_GROQ_API_KEY;
+      console.log('GROQ API Key available:', !!apiKey);
+      console.log('API Key length:', apiKey ? apiKey.length : 0);
+      
+      if (!apiKey) {
+        throw new Error('GROQ API key is not configured. Please check environment variables.');
+      }
+      
       const response = await fetch('https://api.groq.com/openai/v1/chat/completions', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'Authorization': `Bearer ${import.meta.env.VITE_GROQ_API_KEY}`
+          'Authorization': `Bearer ${apiKey}`
         },
         body: JSON.stringify(requestBody)
       });
