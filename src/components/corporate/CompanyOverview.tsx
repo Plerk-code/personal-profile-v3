@@ -41,7 +41,7 @@ export default function CompanyOverview() {
               <h2 className="text-3xl font-display font-bold text-gray-900">Our Mission</h2>
             </div>
             <p className="text-lg text-gray-700 leading-relaxed">
-              At Revision AI our mission is to turn complex AI ideas into practical, production-ready systems that create measurable business value. We help enterprises move beyond experiments and pilots by designing, implementing, and scaling AI solutions that are trusted by executives, loved by teams, and grounded in sound architecture.
+              At Plerk our mission is to turn complex AI ideas into practical, production-ready systems that create measurable business value. We help enterprises move beyond experiments and pilots by designing, implementing, and scaling AI solutions that are trusted by executives, loved by teams, and grounded in sound architecture.
             </p>
           </motion.div>
 
@@ -72,7 +72,7 @@ export default function CompanyOverview() {
           <h2 className="text-3xl font-display font-bold text-gray-900 mb-6">Our Story</h2>
           <div className="prose prose-lg max-w-none text-gray-700">
             <p className="text-lg leading-relaxed mb-4">
-              Revision AI was founded in 2024 by Benjamin Hinson after two decades leading digital transformation, enterprise architecture, and AI delivery for organizations such as AXA Insurance, Standard Bank, Absa, MultiChoice, MTN and John Lewis Partners. Having repeatedly seen enterprises struggle to move from slideware and pilots to production AI, Benjamin created Revision AI as a boutique consultancy focused on pragmatic, outcome-driven implementation. Drawing on experience in finance, telecoms, retail and professional services, the firm combines deep technical understanding of modern AI stacks with rigorous delivery leadership and stakeholder management.
+              Plerk was founded in 2024 by Benjamin Hinson after two decades leading digital transformation, enterprise architecture, and AI delivery for organizations such as AXA Insurance, Standard Bank, Absa, MultiChoice, MTN and John Lewis Partners. Having repeatedly seen enterprises struggle to move from slideware and pilots to production AI, Benjamin created Plerk as a boutique consultancy focused on pragmatic, outcome-driven implementation. Drawing on experience in finance, telecoms, retail and professional services, the firm combines deep technical understanding of modern AI stacks with rigorous delivery leadership and stakeholder management.
             </p>
             <div className="flex flex-wrap gap-6 mt-6">
               <div className="flex items-center gap-2 text-gray-600">

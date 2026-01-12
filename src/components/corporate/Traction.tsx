@@ -26,9 +26,9 @@ export default function Traction() {
     },
     {
       year: '2024',
-      title: 'Revision AI founded',
+      title: 'Plerk founded',
       description:
-        'Launched Revision AI as a boutique consultancy focused on pragmatic AI implementation, with an initial portfolio in legal and financial services.',
+        'Launched Plerk as a boutique consultancy focused on pragmatic AI implementation, with an initial portfolio in legal and financial services.',
       icon: Users,
     },
     {

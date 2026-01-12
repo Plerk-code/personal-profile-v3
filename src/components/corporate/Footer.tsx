@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           {/* Company Info */}
           <div>
-            <h3 className="text-white font-bold text-lg mb-4">Revision AI</h3>
+            <h3 className="text-white font-bold text-lg mb-4">Plerk</h3>
             <p className="text-sm leading-relaxed">
               Boutique consultancy specializing in pragmatic AI implementation and enterprise-scale digital transformation.
             </p>
@@ -110,7 +110,7 @@ export default function Footer() {
         <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
             <div>
-              <p>&copy; {currentYear} Revision AI. All rights reserved.</p>
+              <p>&copy; {currentYear} Plerk. All rights reserved.</p>
             </div>
             <div>
               <p>

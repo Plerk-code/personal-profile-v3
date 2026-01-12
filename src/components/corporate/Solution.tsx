@@ -75,7 +75,7 @@ export default function Solution() {
           </h2>
           <div className="max-w-4xl mx-auto bg-green-50 border-l-4 border-green-500 p-6 rounded-r-lg mb-8">
             <p className="text-lg text-gray-800 leading-relaxed mb-4">
-              Revision AI partners with organizations to design and implement AI solutions that are grounded in enterprise architecture and real delivery constraints. We help you choose the right use cases, architect robust data and integration flows, and build AI-powered workflows (including RAG systems and automation) that plug into your existing platforms. Our consulting model combines strategic advisory, technical design and embedded delivery leadership so that AI initiatives translate into sustainable capabilities rather than one-off experiments.
+              Plerk partners with organizations to design and implement AI solutions that are grounded in enterprise architecture and real delivery constraints. We help you choose the right use cases, architect robust data and integration flows, and build AI-powered workflows (including RAG systems and automation) that plug into your existing platforms. Our consulting model combines strategic advisory, technical design and embedded delivery leadership so that AI initiatives translate into sustainable capabilities rather than one-off experiments.
             </p>
           </div>
 
@@ -83,7 +83,7 @@ export default function Solution() {
           <div className="max-w-4xl mx-auto bg-gradient-to-r from-primary-600 to-accent-600 text-white p-8 rounded-xl">
             <h3 className="text-2xl font-bold mb-4">Unique Value Proposition</h3>
             <p className="text-lg leading-relaxed">
-              Revision AI brings a rare combination of hands-on AI implementation experience, deep enterprise architecture expertise and proven programme leadership. We specialize in highly regulated, complex environments where robustness, compliance and stakeholder alignment matter as much as innovation. Rather than selling generic frameworks, we co-create tailored roadmaps, architectures and delivery approaches that respect your constraints and accelerate time to value.
+              Plerk brings a rare combination of hands-on AI implementation experience, deep enterprise architecture expertise and proven programme leadership. We specialize in highly regulated, complex environments where robustness, compliance and stakeholder alignment matter as much as innovation. Rather than selling generic frameworks, we co-create tailored roadmaps, architectures and delivery approaches that respect your constraints and accelerate time to value.
             </p>
           </div>
         </motion.div>

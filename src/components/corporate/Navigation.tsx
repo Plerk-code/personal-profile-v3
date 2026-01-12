@@ -61,7 +61,7 @@ export default function Navigation() {
                 isScrolled ? 'text-gray-900' : 'text-white'
               }`}
             >
-              Revision AI
+              Plerk
             </a>
           </motion.div>
 

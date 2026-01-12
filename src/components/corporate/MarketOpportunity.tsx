@@ -157,7 +157,7 @@ export default function MarketOpportunity() {
           </h3>
           <div className="max-w-4xl mx-auto bg-white rounded-xl p-8 shadow-lg border border-gray-200">
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              Revision AI serves medium to large enterprises that have strategic ambitions for AI but face delivery friction: complex legacy landscapes, multiple stakeholders, regulatory constraints and limited internal AI implementation experience. Typical buyers are C-level technology and business leaders who need a trusted partner to translate strategy into architecture, roadmaps and shipped solutions.
+              Plerk serves medium to large enterprises that have strategic ambitions for AI but face delivery friction: complex legacy landscapes, multiple stakeholders, regulatory constraints and limited internal AI implementation experience. Typical buyers are C-level technology and business leaders who need a trusted partner to translate strategy into architecture, roadmaps and shipped solutions.
             </p>
           </div>
         </motion.div>
@@ -215,7 +215,7 @@ export default function MarketOpportunity() {
             <h3 className="text-3xl font-display font-bold">Competitive Advantage</h3>
           </div>
           <p className="text-lg leading-relaxed max-w-3xl">
-            Unlike generalist consultancies or tooling vendors, Revision AI is focused on pragmatic AI implementation in complex enterprises. Our advantage lies in the founder’s track record leading large-scale programmes, deep experience with enterprise architecture and integration, and hands-on delivery of AI systems such as RAG-based document intelligence, automation platforms and customer data solutions. This combination enables us to design solutions that executives can trust and engineering teams can maintain.
+            Unlike generalist consultancies or tooling vendors, Plerk is focused on pragmatic AI implementation in complex enterprises. Our advantage lies in the founder's track record leading large-scale programmes, deep experience with enterprise architecture and integration, and hands-on delivery of AI systems such as RAG-based document intelligence, automation platforms and customer data solutions. This combination enables us to design solutions that executives can trust and engineering teams can maintain.
           </p>
         </motion.div>
       </div>

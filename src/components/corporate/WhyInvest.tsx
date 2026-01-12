@@ -7,7 +7,7 @@ export default function WhyInvest() {
       icon: TrendingUp,
       title: 'Proven enterprise delivery track record',
       description:
-        'Revision AI is built on two decades of experience delivering complex programmes for Tier-1 organizations, reducing delivery risk for investors backing an execution-focused team.',
+        'Plerk is built on two decades of experience delivering complex programmes for Tier-1 organizations, reducing delivery risk for investors backing an execution-focused team.',
     },
     {
       icon: Target,
@@ -47,7 +47,7 @@ export default function WhyInvest() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-display font-bold text-gray-900 mb-4">
-            Why Invest in [COMPANY_NAME]
+            Why Invest in Plerk
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             A compelling investment opportunity with strong growth potential
@@ -136,7 +136,7 @@ export default function WhyInvest() {
           <div className="bg-gradient-to-br from-primary-600 to-primary-700 text-white rounded-xl p-8">
             <h3 className="text-2xl font-bold mb-4">Projected Growth Trajectory</h3>
             <p className="leading-relaxed mb-4">
-              Over the next 3–5 years, Revision AI plans to deepen its footprint in financial services and insurance while expanding into
+              Over the next 3–5 years, Plerk plans to deepen its footprint in financial services and insurance while expanding into
               adjacent industries such as telecoms and enterprise services. Growth will be driven by a combination of repeat business from
               anchor clients, referral-based work, and a targeted go-to-market motion focused on high-value AI implementation programmes.
             </p>

@@ -95,7 +95,7 @@ export default function Credentials() {
           </div>
           <div className="bg-gray-50 rounded-xl p-8">
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-              Revision AI and its founder have delivered strategic programmes and AI initiatives for leading financial services, telecoms and
+              Plerk and its founder have delivered strategic programmes and AI initiatives for leading financial services, telecoms and
               media organizations, often operating at the intersection of business strategy, architecture and delivery.
             </p>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -157,7 +157,7 @@ export default function Credentials() {
           </div>
           <p className="text-lg leading-relaxed mb-6 max-w-3xl">
             Experience delivering programmes across South Africa, broader Africa, the United Kingdom and Europe, with a particular focus on
-            pan-African banking and insurance. Revision AI is building on this foundation to serve clients across additional high-growth
+            pan-African banking and insurance. Plerk is building on this foundation to serve clients across additional high-growth
             emerging markets.
           </p>
           <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">

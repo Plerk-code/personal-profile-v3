@@ -15,15 +15,15 @@ export default function Leadership() {
     {
       name: 'Benjamin Hinson',
       title: 'Founder & CEO',
-      bio: "Benjamin Hinson is a digital transformation and AI implementation leader with over two decades of experience across financial services, telecoms, retail and technology. Before founding Revision AI, he led large-scale programmes and architecture initiatives for organizations including AXA Insurance, Standard Bank, Absa Group, MultiChoice and John Lewis Partners. Benjamin specializes in bridging executive strategy and engineering execution, designing pragmatic AI and data solutions that deliver measurable outcomes. He combines deep enterprise architecture expertise with hands-on delivery leadership, building high-performing teams and guiding organizations from concept through to production.",
+      bio: "Benjamin Hinson is a digital transformation and AI implementation leader with over two decades of experience across financial services, telecoms, retail and technology. Before founding Plerk, he led large-scale programmes and architecture initiatives for organizations including AXA Insurance, Standard Bank, Absa Group, MultiChoice and John Lewis Partners. Benjamin specializes in bridging executive strategy and engineering execution, designing pragmatic AI and data solutions that deliver measurable outcomes. He combines deep enterprise architecture expertise with hands-on delivery leadership, building high-performing teams and guiding organizations from concept through to production.",
       credentials: [
-        'Founder & AI Implementation Specialist – Revision AI',
+        'Founder & AI Implementation Specialist – Plerk',
         'BCOMM Hons Information Technology – University of Johannesburg',
         'TOGAF 9.2 Certified, The Open Group',
         'Professional Scrum Master (PSM II) & Agile Scrum Master',
       ],
       linkedinUrl: 'https://linkedin.com/in/benjamin-hinson',
-      imageUrl: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop',
+      imageUrl: '/image001.jpg',
     },
     // Add more team members here as needed
   ];
@@ -42,7 +42,7 @@ export default function Leadership() {
             Leadership Team
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Meet the visionaries driving [COMPANY_NAME] forward
+            Meet the visionaries driving Plerk forward
           </p>
         </motion.div>
 
@@ -57,11 +57,11 @@ export default function Leadership() {
               className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
             >
               {/* Image */}
-              <div className="relative h-64 bg-gradient-to-br from-primary-400 to-accent-500">
+              <div className="relative h-64 bg-gradient-to-br from-primary-400 to-accent-500 overflow-hidden">
                 <img
                   src={member.imageUrl}
                   alt={member.name}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-[center_30%]"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
               </div>

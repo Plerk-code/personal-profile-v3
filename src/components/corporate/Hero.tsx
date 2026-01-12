@@ -29,7 +29,7 @@ export default function Hero({ onRequestDeck, onScheduleCall }: HeroProps) {
           transition={{ duration: 0.8 }}
         >
           <h1 className="text-5xl md:text-7xl font-display font-bold text-white mb-6 leading-tight">
-            Revision AI
+            Plerk
           </h1>
           <p className="text-xl md:text-2xl text-primary-100 mb-12 max-w-3xl mx-auto">
             Pragmatic AI implementation for enterprises that want production-grade results, not just proofs of concept.
