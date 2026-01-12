@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
+import plerkLogo from '../../assets/images/Plerk_Logo_Transparent.png';
 
 const navItems = [
   { label: 'Home', href: '#hero' },
@@ -49,7 +50,7 @@ export default function Navigation() {
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
-            className="text-2xl font-display font-bold"
+            className="flex items-center"
           >
             <a
               href="#hero"
@@ -57,11 +58,13 @@ export default function Navigation() {
                 e.preventDefault();
                 handleNavClick('#hero');
               }}
-              className={`transition-colors ${
-                isScrolled ? 'text-gray-900' : 'text-white'
-              }`}
+              className="flex items-center"
             >
-              Plerk
+              <img 
+                src={plerkLogo} 
+                alt="Plerk Logo" 
+                className="h-24 md:h-32 w-auto"
+              />
             </a>
           </motion.div>
 

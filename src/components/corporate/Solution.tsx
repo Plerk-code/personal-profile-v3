@@ -130,13 +130,95 @@ export default function Solution() {
           className="mt-16"
         >
           <div className="bg-gradient-to-br from-gray-50 to-white rounded-2xl p-8 md:p-12 border border-gray-200">
-            <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">
-              Visual Overview
+            <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">
+              Our AI Implementation Process
             </h3>
-            <div className="aspect-video bg-gray-200 rounded-lg flex items-center justify-center">
-              <p className="text-gray-500">
-                [PLACEHOLDER_FOR_PRODUCT_MOCKUP_OR_INFOGraphic - Replace with actual image or infographic]
-              </p>
+            
+            {/* Process Flow Diagram */}
+            <div className="relative">
+              {/* Process Steps */}
+              <div className="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-6">
+                {/* Step 1 */}
+                <div className="relative">
+                  <div className="bg-white rounded-xl p-6 shadow-md border-2 border-primary-200 hover:border-primary-500 transition-colors">
+                    <div className="w-12 h-12 bg-primary-600 rounded-full flex items-center justify-center text-white font-bold text-lg mb-4 mx-auto">
+                      1
+                    </div>
+                    <h4 className="font-semibold text-gray-900 mb-2 text-center">Assess & Strategize</h4>
+                    <p className="text-sm text-gray-600 text-center">AI readiness assessment, use case prioritization, strategic roadmap</p>
+                  </div>
+                  {/* Arrow */}
+                  <div className="hidden md:block absolute top-1/2 -right-3 transform -translate-y-1/2 z-10">
+                    <div className="w-6 h-0.5 bg-primary-400"></div>
+                    <div className="absolute right-0 top-1/2 transform -translate-y-1/2 w-0 h-0 border-l-4 border-l-primary-400 border-t-2 border-t-transparent border-b-2 border-b-transparent"></div>
+                  </div>
+                </div>
+
+                {/* Step 2 */}
+                <div className="relative">
+                  <div className="bg-white rounded-xl p-6 shadow-md border-2 border-primary-200 hover:border-primary-500 transition-colors">
+                    <div className="w-12 h-12 bg-primary-600 rounded-full flex items-center justify-center text-white font-bold text-lg mb-4 mx-auto">
+                      2
+                    </div>
+                    <h4 className="font-semibold text-gray-900 mb-2 text-center">Design & Architect</h4>
+                    <p className="text-sm text-gray-600 text-center">Solution architecture, integration design, data flow planning</p>
+                  </div>
+                  {/* Arrow */}
+                  <div className="hidden md:block absolute top-1/2 -right-3 transform -translate-y-1/2 z-10">
+                    <div className="w-6 h-0.5 bg-primary-400"></div>
+                    <div className="absolute right-0 top-1/2 transform -translate-y-1/2 w-0 h-0 border-l-4 border-l-primary-400 border-t-2 border-t-transparent border-b-2 border-b-transparent"></div>
+                  </div>
+                </div>
+
+                {/* Step 3 */}
+                <div className="relative">
+                  <div className="bg-white rounded-xl p-6 shadow-md border-2 border-primary-200 hover:border-primary-500 transition-colors">
+                    <div className="w-12 h-12 bg-primary-600 rounded-full flex items-center justify-center text-white font-bold text-lg mb-4 mx-auto">
+                      3
+                    </div>
+                    <h4 className="font-semibold text-gray-900 mb-2 text-center">Build & Integrate</h4>
+                    <p className="text-sm text-gray-600 text-center">Development, RAG systems, API integration, testing</p>
+                  </div>
+                  {/* Arrow */}
+                  <div className="hidden md:block absolute top-1/2 -right-3 transform -translate-y-1/2 z-10">
+                    <div className="w-6 h-0.5 bg-primary-400"></div>
+                    <div className="absolute right-0 top-1/2 transform -translate-y-1/2 w-0 h-0 border-l-4 border-l-primary-400 border-t-2 border-t-transparent border-b-2 border-b-transparent"></div>
+                  </div>
+                </div>
+
+                {/* Step 4 */}
+                <div className="relative">
+                  <div className="bg-white rounded-xl p-6 shadow-md border-2 border-accent-200 hover:border-accent-500 transition-colors">
+                    <div className="w-12 h-12 bg-accent-600 rounded-full flex items-center justify-center text-white font-bold text-lg mb-4 mx-auto">
+                      4
+                    </div>
+                    <h4 className="font-semibold text-gray-900 mb-2 text-center">Deploy & Scale</h4>
+                    <p className="text-sm text-gray-600 text-center">Production deployment, monitoring, optimization, scaling</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Bottom Info Box */}
+              <div className="mt-8 bg-gradient-to-r from-primary-50 to-accent-50 rounded-lg p-6 border border-primary-200">
+                <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+                  <div className="flex-1">
+                    <h4 className="font-semibold text-gray-900 mb-2">Continuous Support</h4>
+                    <p className="text-sm text-gray-700">
+                      Throughout the process, we provide embedded delivery leadership, stakeholder management, and knowledge transfer to ensure sustainable success.
+                    </p>
+                  </div>
+                  <div className="flex gap-2">
+                    <div className="px-4 py-2 bg-white rounded-lg border border-primary-200">
+                      <div className="text-2xl font-bold text-primary-600">65%</div>
+                      <div className="text-xs text-gray-600">Faster Time-to-Value</div>
+                    </div>
+                    <div className="px-4 py-2 bg-white rounded-lg border border-primary-200">
+                      <div className="text-2xl font-bold text-accent-600">94%</div>
+                      <div className="text-xs text-gray-600">Production Success Rate</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </motion.div>
