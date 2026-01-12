@@ -63,45 +63,30 @@ function App() {
         <div ref={cursorRef} className="fixed w-8 h-8 pointer-events-none mix-blend-difference z-50 border-2 border-white rounded-full transform -translate-x-1/2 -translate-y-1/2" />
 
         {/* Navigation */}
-        <nav className="fixed top-0 w-full z-40 px-6 py-8 bg-black/80 backdrop-blur-sm">
-          <div className="max-w-[2000px] mx-auto flex flex-col md:flex-row md:items-center justify-between gap-4">
-            <div className="flex items-center justify-between w-full md:w-auto">
-              <div className="flex items-center gap-6">
-                <a href="https://www.plerk.co.za" target="_blank" rel="noopener noreferrer">
-                  <img src={plerkLogo} alt="Plerk Logo" className="h-24" />
-                </a>
-                <Link to="/" className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600">
-                  Benjamin Hinson CSM : TOGAF : KANBAN
-                </Link>
-              </div>
-            </div>
-            
-            <div className="flex items-center gap-8">
-              <Link to="/" className="text-sm font-medium hover:text-blue-400 transition-colors">
-                Home
-              </Link>
-              <Link to="/experience" className="text-sm font-medium hover:text-blue-400 transition-colors">
-                Professional Experience
-              </Link>
-              <Link to="/education" className="text-sm font-medium hover:text-blue-400 transition-colors">
-                Education
-              </Link>
-              <Link to="/skills" className="text-sm font-medium hover:text-blue-400 transition-colors">
-                Skills
-              </Link>
-              <Link to="/portfolio" className="text-sm font-medium hover:text-blue-400 transition-colors">
-                Portfolio
-              </Link>
-              <Link to="/blog" className="text-sm font-medium hover:text-blue-400 transition-colors">
-                Blog
-              </Link>
-              <a 
-                href="https://linkedin.com/in/benjamin-hinson" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="flex items-center text-blue-400 hover:text-blue-300 transition-colors"
+        <nav className="fixed top-0 w-full z-40 px-6 py-4 bg-slate-900/95 backdrop-blur-md border-b border-white/10">
+          <div className="max-w-7xl mx-auto flex items-center justify-between">
+            <Link to="/" className="flex items-center gap-3">
+              <img src={plerkLogo} alt="Plerk Logo" className="h-24 md:h-28" />
+            </Link>
+
+            <div className="hidden md:flex items-center gap-8">
+              <a href="#overview" className="text-sm font-medium text-gray-300 hover:text-cyan-400 transition-colors">
+                About
+              </a>
+              <a href="#solution" className="text-sm font-medium text-gray-300 hover:text-cyan-400 transition-colors">
+                Solution
+              </a>
+              <a href="#market" className="text-sm font-medium text-gray-300 hover:text-cyan-400 transition-colors">
+                Market
+              </a>
+              <a href="#invest" className="text-sm font-medium text-gray-300 hover:text-cyan-400 transition-colors">
+                Invest
+              </a>
+              <a
+                href="#contact"
+                className="px-6 py-2 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full text-white font-semibold hover:shadow-lg hover:shadow-cyan-500/50 transition-all duration-300"
               >
-                <Linkedin className="w-4 h-4" />
+                Contact
               </a>
             </div>
           </div>
