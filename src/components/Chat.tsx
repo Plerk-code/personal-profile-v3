@@ -42,7 +42,7 @@ const Chat: React.FC<ChatProps> = ({ className = '' }) => {
       
       // Replace loading indicator with actual response
       setChatHistory(prev => [...prev.slice(0, -1), botResponse]);
-    } catch (err) {
+    } catch {
       // Replace loading indicator with error message
       setChatHistory(prev => [
         ...prev.slice(0, -1), 

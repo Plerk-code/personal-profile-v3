@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Code, Star, Award, BookOpen, Users, Settings } from 'lucide-react';
+import { Star, Award, Users, Settings } from 'lucide-react';
 
 interface Skill {
   name: string;

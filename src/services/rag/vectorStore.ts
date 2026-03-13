@@ -5,7 +5,7 @@ import { pipeline } from '@xenova/transformers';
 export class VectorStore {
   private documents: Document[] = [];
   private embeddings: number[][] = [];
-  private embedder: any;
+  private embedder: Awaited<ReturnType<typeof pipeline>> | null = null;
   
   constructor() {
     // Initialize the embedder asynchronously when the class is instantiated

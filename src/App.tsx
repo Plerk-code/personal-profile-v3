@@ -1,6 +1,5 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef } from 'react';
 import plerkLogo from './assets/images/Plerk_Logo_Transparent.png';
-import { Brain, Briefcase, GraduationCap, Award, Code, Rocket, Send, Phone, Linkedin } from 'lucide-react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import ExperiencePage from './pages/ExperiencePage';
@@ -14,14 +13,6 @@ import Analytics from './components/Analytics';
 
 function App() {
   const cursorRef = useRef<HTMLDivElement>(null);
-  const [message, setMessage] = useState('');
-  const [chatHistory, setChatHistory] = useState([
-    {
-      type: 'bot',
-      message: "Hello! I'm here to help you learn more about my resume. What would you like to know?",
-    },
-  ]);
-
   useEffect(() => {
     const cursor = cursorRef.current;
     const handleMouseMove = (e: MouseEvent) => {
@@ -33,27 +24,6 @@ function App() {
     window.addEventListener('mousemove', handleMouseMove);
     return () => window.removeEventListener('mousemove', handleMouseMove);
   }, []);
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!message.trim()) return;
-
-    // Add user message
-    setChatHistory((prev) => [...prev, { type: 'user', message }]);
-
-    // Simulate bot response
-    setTimeout(() => {
-      setChatHistory((prev) => [
-        ...prev,
-        {
-          type: 'bot',
-          message: "I'll be happy to tell you more about my experience and skills. What specific aspect would you like to know about?",
-        },
-      ]);
-    }, 1000);
-
-    setMessage('');
-  };
 
   return (
     <Router>

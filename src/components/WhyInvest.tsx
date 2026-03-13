@@ -1,5 +1,5 @@
 import React from 'react';
-import { Target, DollarSign, TrendingUp, Shield, Rocket, Users, Globe2, Zap } from 'lucide-react';
+import { Target, DollarSign, TrendingUp, Shield, Rocket, Users } from 'lucide-react';
 
 const WhyInvest = () => {
   const reasons = [
